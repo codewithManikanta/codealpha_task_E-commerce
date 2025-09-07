@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bhaash.in</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+        <div id="account-info" style="float:right; margin-right:2em;">
+            <span>Welcome, <strong>User</strong></span>
+            <a href="#">Account</a>
+        </div>
+    </header>
+    <main>
+        <section id="search-section">
+            <input type="text" id="search-bar" placeholder="Search products...">
+        </section>
+        <section id="category-section">
+            <button class="category-btn" data-category="All">All</button>
+            <button class="category-btn" data-category="Electronics">Electronics</button>
+            <button class="category-btn" data-category="Home Appliances">Home Appliances</button>
+            <button class="category-btn" data-category="Fitness">Fitness</button>
+            <button class="category-btn" data-category="Accessories">Accessories</button>
+            <!-- Add more categories as needed -->
+        </section>
+        <section id="product-list">
+            <h2>Product Listings</h2>
+            <div id="products"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 E-Commerce Site</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

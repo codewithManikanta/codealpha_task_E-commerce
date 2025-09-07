@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <section id="cart-section">
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Subtotal</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items"></tbody>
+            </table>
+            <div id="cart-summary">
+                <p>Total: ₹<span id="cart-total">0.00</span></p>
+                <button id="place-order-btn">Place Order</button>
+            </div>
+        </section>
+        <div id="payment-section">
+            <h3>Payment Options</h3>
+            <label><input type="radio" name="payment" value="UPI" checked> UPI</label>
+            <label><input type="radio" name="payment" value="NetBanking"> NetBanking</label>
+            <label><input type="radio" name="payment" value="Card"> Debit/Credit Card</label>
+            <br>
+            <input type="text" id="upi-id" placeholder="Enter UPI ID" style="display:inline-block;">
+            <input type="text" id="bank-details" placeholder="Enter Bank Details" style="display:none;">
+            <input type="text" id="card-details" placeholder="Enter Card Number" style="display:none;">
+        </div>
+        <div id="address-section">
+            <h3>Delivery Address</h3>
+            <input type="text" id="address" placeholder="Enter your address" style="width:80%;">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 E-Commerce Site</p>
+    </footer>
+    <script src="js/cart.js"></script>
+</body>
+</html>
